@@ -69,7 +69,67 @@ Keine Lust, 20 Gegenstände einzeln zu kaufen oder jedes Mal das Mengenfenster z
 - **Items mit Marken/Währungen:** Leistbarkeit kann nicht vorab geprüft werden, das Spiel meldet es, falls es nicht reicht
 - **Fehler gefunden?** Lua-Fehlertext (z. B. via *BugSack*) in die Kommentare schreiben
 
+
+
+UPDATE // 
+
+# 🪙 QuickStack
+
+**Alt + Left-click at a vendor buys the amount you choose.** A tiny World of Warcraft addon with a per-item amount slider, a draggable minimap button and a built-in bug report.
+
+*Alt + Linksklick beim Händler kauft die Menge, die du einstellst.*
+
+## Features
+- One-click buying with a modifier key (Alt, Ctrl or Shift)
+- Amount per item, 1-20 via slider, saved per account
+- Items are added on their first click or by dragging them from your bags
+- Limited by vendor stock and your gold
+- Minimap button, draggable along the minimap edge, opens the menu
+- Settings tab and bug report tab
+- English and German
+
+## Usage
+1. Click the coin icon on the minimap, or type `/qs`
+2. Set the amount for each item in the **Items** tab
+3. At a vendor, hold **Alt** and **left-click** an item
+
+| Command | Description |
+|---|---|
+| `/qs` | Open the menu |
+| `/qs alt` / `ctrl` / `shift` | Set the modifier key |
+
+Items without a saved amount buy a full stack (max. 20) and are added to the list automatically.
+
+## Installation
+- **CurseForge:** install via the CurseForge app, or
+- **Manually:** copy the `QuickStack` folder (containing `QuickStack.toc` and `QuickStack.lua`) to `World of Warcraft/_retail_/Interface/AddOns/` (Classic: `_classic_` / `_classic_era_`)
+
+If the game says *Incompatible* or *Out of date*, tick **Load out of date AddOns**.
+
+## Reporting bugs
+Open an [issue](https://github.com/sjeutes93/QuickStack/issues) and paste the report from the **Bug Report** tab in the menu. Lua error text (e.g. from BugSack) helps a lot.
+
+## Project layout
+| File | Purpose |
+|---|---|
+| `QuickStack.toc` | Addon metadata and supported game versions |
+| `QuickStack.lua` | All addon code |
+| `.pkgmeta` | Settings for the CurseForge packager |
+| `.github/workflows/release.yml` | Builds and publishes a release when a version tag is pushed |
+
+## Releasing
+Push a tag such as `v1.1.0`. The workflow packages the addon and creates a GitHub release. For CurseForge uploads, add the `CF_API_KEY` secret and the `X-Curse-Project-ID` line to the `.toc`.
+
+## License
+[MIT](LICENSE)
+
 ---
+
+# 🇩🇪 Kurzfassung
+
+QuickStack kauft beim Händler mit **Alt + Linksklick** die Menge, die du pro Item einstellst (Regler 1-20). Menü über den Minimap-Button oder `/qs`. Items werden beim ersten Alt-Klick automatisch hinzugefügt oder aus den Taschen ins Menü gezogen. Fehler meldest du über den Reiter **Bug melden** oder ein [GitHub-Issue](https://github.com/sjeutes93/QuickStack/issues).
+
+
 
 💛 *Gefällt dir QuickStack? Ein Kommentar oder eine Bewertung hilft, dass andere das Addon finden.*
 *Enjoying QuickStack? A comment or rating helps others find it.*
