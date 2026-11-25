@@ -1,0 +1,5 @@
+package-as: QuickStack
+ignore:
+  - README.md
+  - .github
+  - .gitignore
