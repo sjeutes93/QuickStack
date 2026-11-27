@@ -1,0 +1,31 @@
+## Interface: 16001, 120000, 110107, 50500, 40402, 11508, 11507, 11506
+## Title: QuickStack
+## Title-deDE: QuickStack
+## Notes: Alt + Left-click at a vendor buys a full stack instantly.
+## Notes-deDE: Alt + Linksklick beim Haendler kauft sofort einen vollen Stack.
+## Author: sjeutes93
+## X-Website: https://github.com/sjeutes93/QuickStack
+## Version: @project-version@
+## Category: Inventory
+## IconTexture: Interface\Icons\INV_Misc_Coin_01
+## SavedVariables: QuickStackDB
+
+Locales\enUS.lua
+Locales\deDE.lua
+Locales\frFR.lua
+Locales\esES.lua
+Locales\ruRU.lua
+Core.lua
+UI.lua
+Buying.lua
+Prices.lua
+Launcher.lua
+Menu.lua
+Pages\Items.lua
+Pages\Prices.lua
+Pages\Profiles.lua
+Pages\Settings.lua
+Pages\BugReport.lua
+Options.lua
+Update.lua
+Events.lua

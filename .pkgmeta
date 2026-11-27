@@ -1,0 +1,13 @@
+package-as: QuickStack
+
+manual-changelog:
+  filename: CHANGELOG.md
+  markup-type: markdown
+
+ignore:
+  - README.md
+  - CONTRIBUTING.md
+  - SUPPORT.md
+  - CHANGELOG.md
+  - .github
+  - .gitignore
